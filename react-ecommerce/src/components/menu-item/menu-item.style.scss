@@ -9,7 +9,13 @@
   margin: 0 8px 15px;
   background-position: center;
   background-repeat: no-repeat;
-  background-size: cover;;
+  background-size: cover;
+
+  &:hover 
+
+  &.large {
+    height: 380px;
+  }
 
   &:first-child {
     margin-right: 8px;
@@ -27,7 +33,7 @@
     align-items: center;
     justify-content: center;
     border: 1px solid #000;
-    background-color: rgba(255, 255, 255, 0.8);
+    background-color: rgba(255, 255, 255, 0.7);
 
     .title {
       font-weight: bold;
