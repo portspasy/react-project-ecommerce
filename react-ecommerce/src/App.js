@@ -5,14 +5,15 @@ import "./App.css";
 
 import HomePage from "./pages/homepage/homepage.component";
 
-/// this is just a test 
-const TestRouter = () => {
+/// this is just a test
+const TestRouter = props => {
   return (
     <div>
-       <h1>This is TestRouter inside page!</h1>
+      <button onClick={() => props.history.push("/")}>HomePage</button>
+      <h1>This is TestRouter inside page!</h1>
     </div>
-  )
-}
+  );
+};
 
 function App() {
   return (
