@@ -2,13 +2,13 @@ import React from "react";
 
 import "./menu-item.style.scss";
 
-const MenuItem = ({ title, imageUrl }) => (
+const MenuItem = ({ title, imageUrl, size }) => (
   // the way we can add backgourd images in react!
   <div
     style={{
       backgroundImage: `url(${imageUrl})`
     }}
-    className="menu-item"
+    className={`${size} menu-item`}
   >
     <div className="content">
       <h1 className="title">{title}</h1>
