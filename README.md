@@ -1,3 +1,3 @@
 # react-project-ecommerce
 
-React Js and Sass Ecommerce Tutorial Project
+React Js and Sass Ecommerce Project
