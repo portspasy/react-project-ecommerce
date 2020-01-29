@@ -1,11 +1,24 @@
-import React from "react";
+import React, { Component }from "react";
+
+import SHOP_DATA from "./shop.data"
 
 import "./shop.style.scss";
 
-const Shop = () => (
-  <div className="shop">
-        <h1>This is shop page</h1>
-  </div>
-);
+class ShopPage extends Component {
+  constructor(props) {
+    super(props);
 
-export default Shop;
+    this.state = {
+      collections: SHOP_DATA
+    };
+  }
+  render() {
+    return (
+      <div className="">
+        <h1>Shop Page!!!</h1>
+      </div>
+    );
+  }
+}
+
+export default ShopPage;

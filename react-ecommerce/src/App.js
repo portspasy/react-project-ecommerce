@@ -4,7 +4,7 @@ import { Route } from "react-router-dom";
 import "./App.css";
 
 import HomePage from "./pages/homepage/homepage.component";
-import Shop from "./pages/shop/shop.component";
+import ShopPage from "./pages/shop/shop.component";
 
 /// this is just a test
 const TestRouter = props => {
@@ -21,7 +21,7 @@ function App() {
     <div>
       <Route exact path="/" component={HomePage} />
       <Route path="/test" component={TestRouter} />
-      <Route path="/hats" component={Shop} />
+      <Route path="/hats" component={ShopPage} />
     </div>
   );
 }
