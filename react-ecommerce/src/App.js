@@ -21,7 +21,7 @@ function App() {
     <div>
       <Route exact path="/" component={HomePage} />
       <Route path="/test" component={TestRouter} />
-      <Route path="/hats" component={ShopPage} />
+      <Route path="/shop" component={ShopPage} />
     </div>
   );
 }
