@@ -15,14 +15,12 @@ class ShopPage extends Component {
   }
   render() {
     // distructio
-    const {collections} = this.state;
+    const { collections } = this.state;
     return (
       <div className="shop-page">
-        {
-            collections.map(({id, ...otherCollectionsProps }) => (
-                <CollectionPreview key={id} {...otherCollectionsProps} />
-            ))
-        }
+        {collections.map(({ id, ...otherCollectionsProps }) => (
+          <CollectionPreview key={id} {...otherCollectionsProps} />
+        ))}
       </div>
     );
   }
