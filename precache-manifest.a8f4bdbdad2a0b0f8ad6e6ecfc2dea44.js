@@ -1,10 +1,10 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "38bb33345d27dec1ed3dd3aae6171881",
+    "revision": "62e8baa617d86411a5ef7af4cf3766ad",
     "url": "/react-project-ecommerce/index.html"
   },
   {
-    "revision": "94eb579f2f2a3a187586",
+    "revision": "6b860fe4bf68889c8a56",
     "url": "/react-project-ecommerce/static/css/main.906cbd69.chunk.css"
   },
   {
@@ -16,8 +16,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/react-project-ecommerce/static/js/2.b11e9679.chunk.js.LICENSE"
   },
   {
-    "revision": "94eb579f2f2a3a187586",
-    "url": "/react-project-ecommerce/static/js/main.c6eff230.chunk.js"
+    "revision": "6b860fe4bf68889c8a56",
+    "url": "/react-project-ecommerce/static/js/main.9bea4bd6.chunk.js"
   },
   {
     "revision": "f9dcda07c85f241c10be",
