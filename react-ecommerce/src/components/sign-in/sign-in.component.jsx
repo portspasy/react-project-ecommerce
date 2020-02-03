@@ -15,8 +15,10 @@ class SignIn extends Component {
         <span>Sign in with your email and password.</span>
 
         <form>
-          <input name="email" value={this.state.email} required></input>
-          <input name="password" value={this.state.password} required></input>
+          <label for="email">Email</label>
+          <input name="email" type="email" value={this.state.email} required></input>
+          <label for="password">Password</label>
+          <input name="password" type="password" value={this.state.password} required></input>
         </form>
       </div>
     );
