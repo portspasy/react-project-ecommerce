@@ -12,7 +12,15 @@ class SignIn extends Component {
   handleSubmit = e => {
     e.preventDefault();
 
-    this.setState = { email: "", password: "" };
+    this.setState({ email: "", password: "" });
+  };
+
+
+ handleChange  = e => {
+    // writing one function for different things, e.g.: email or password 
+    const { value, name } = e.target;
+
+    this.setState({ [name]: value });
   };
 
   render() {
@@ -23,12 +31,19 @@ class SignIn extends Component {
 
         <form onSubmit={this.handleSubmit}>
           <label>Email</label>
-          <input name="email" type="email" value={this.state.email} required />
+          <input
+            name="email"
+            type="email"
+            value={this.state.email}
+            onChange={this.handleChange}
+            required
+          />
           <label>Password</label>
           <input
             name="password"
             type="password"
             value={this.state.password}
+            onChange={this.handleChange}
             required
           />
 
