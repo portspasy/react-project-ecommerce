@@ -2,9 +2,11 @@ import React from "react";
 
 import "./sign-in-and-sign-up.style.scss";
 
+import SignIn from "../../components/sign-in/sign-in.component"
+
 const SignInSignUpPage = () => (
   <div>
-    <h1>Sign In Sign Up Page</h1>
+    <SignIn />
   </div>
 );
 
