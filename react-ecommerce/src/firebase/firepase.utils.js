@@ -6,7 +6,14 @@ import "firebase/firestore";
 import "firebase/auth";
 
 const config = {
- 
+  apiKey: "AIzaSyC6ypIeS4mMT170mt6ick2BNadUZ35VS1M",
+  authDomain: "react-ecommerce-db-3taodb3.firebaseapp.com",
+  databaseURL: "https://react-ecommerce-db-3taodb3.firebaseio.com",
+  projectId: "react-ecommerce-db-3taodb3",
+  storageBucket: "react-ecommerce-db-3taodb3.appspot.com",
+  messagingSenderId: "141359905145",
+  appId: "1:141359905145:web:3187eddef6706aea7397a8",
+  measurementId: "G-EHH1L9BZD1"
 };
 
 // to initialize the firebase
@@ -15,4 +22,9 @@ firebase.initializeApp(config);
 export const auth = firebase.auth();
 export const firestore = firebase.firestore();
 
+const provider = new firebase.auth.GoogleAuthProvider();
+provider.setCustomParameters({ prompt: "select_account" });
 
+export const signInWithGoogle = () => auth.signInWithPopup(provider);
+
+export default firebase;
