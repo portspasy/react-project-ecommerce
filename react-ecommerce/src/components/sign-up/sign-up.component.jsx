@@ -18,6 +18,43 @@ class SignUp extends Component {
     };
   }
 
+  handleSubmit = async e => {
+    e.preventDefault();
+
+    const { displayName, email, password, confirmPassword } = this.state;
+
+    if (password !== confirmPassword) {
+      alert("paswords don't match");
+      return;
+    }
+
+    try {
+      const { user } = await auth.createUserWithEmailAndPassword(
+        email,
+        password
+      );
+
+      await createUserProfileDocument(user, { displayName });
+
+      // this is clear out form as well!
+      this.setState({
+        displayName: "",
+        email: "",
+        password: "",
+        confirmPassword: ""
+      });
+    } catch (error) {
+      console.error(error);
+    }
+  };
+
+  handleChange = e => {
+    // writing one function for different things, e.g.: email or password
+    const { value, name } = e.target;
+
+    this.setState({ [name]: value });
+  };
+
   render() {
     const { displayName, email, password, confirmPassword } = this.state;
     return (
