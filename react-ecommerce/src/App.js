@@ -38,7 +38,8 @@ class App extends Component {
   render() {
     return (
       <div>
-        <Header />
+        {/* Header is aware when a user is sign in or sign out by giving currentUser state  */}
+        <Header currentUser={this.state.currentUser} />
         <Switch>
           <Route exact path="/" component={HomePage} />
           <Route path="/shop" component={ShopPage} />
