@@ -53,7 +53,7 @@ class App extends Component {
     return (
       <div>
         {/* Header is aware when a user is sign in or sign out by giving currentUser state  */}
-        <Header currentUser={this.state.currentUser} />
+        <Header />
         <Switch>
           <Route exact path="/" component={HomePage} />
           <Route path="/shop" component={ShopPage} />
