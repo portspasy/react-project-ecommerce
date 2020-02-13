@@ -1,24 +1,24 @@
 {
   "files": {
-    "main.css": "/react-project-ecommerce/static/css/main.5b7c1a8c.chunk.css",
-    "main.js": "/react-project-ecommerce/static/js/main.662d7490.chunk.js",
-    "main.js.map": "/react-project-ecommerce/static/js/main.662d7490.chunk.js.map",
+    "main.css": "/react-project-ecommerce/static/css/main.bcf99306.chunk.css",
+    "main.js": "/react-project-ecommerce/static/js/main.9a184dde.chunk.js",
+    "main.js.map": "/react-project-ecommerce/static/js/main.9a184dde.chunk.js.map",
     "runtime-main.js": "/react-project-ecommerce/static/js/runtime-main.c27f782e.js",
     "runtime-main.js.map": "/react-project-ecommerce/static/js/runtime-main.c27f782e.js.map",
-    "static/js/2.b8908b91.chunk.js": "/react-project-ecommerce/static/js/2.b8908b91.chunk.js",
-    "static/js/2.b8908b91.chunk.js.map": "/react-project-ecommerce/static/js/2.b8908b91.chunk.js.map",
+    "static/js/2.057423ed.chunk.js": "/react-project-ecommerce/static/js/2.057423ed.chunk.js",
+    "static/js/2.057423ed.chunk.js.map": "/react-project-ecommerce/static/js/2.057423ed.chunk.js.map",
     "index.html": "/react-project-ecommerce/index.html",
-    "precache-manifest.bfb263e6b72f87ac9ec5b37edaae2ec8.js": "/react-project-ecommerce/precache-manifest.bfb263e6b72f87ac9ec5b37edaae2ec8.js",
+    "precache-manifest.a9e7178402c2226aa7058573ca552ced.js": "/react-project-ecommerce/precache-manifest.a9e7178402c2226aa7058573ca552ced.js",
     "service-worker.js": "/react-project-ecommerce/service-worker.js",
-    "static/css/main.5b7c1a8c.chunk.css.map": "/react-project-ecommerce/static/css/main.5b7c1a8c.chunk.css.map",
-    "static/js/2.b8908b91.chunk.js.LICENSE": "/react-project-ecommerce/static/js/2.b8908b91.chunk.js.LICENSE",
+    "static/css/main.bcf99306.chunk.css.map": "/react-project-ecommerce/static/css/main.bcf99306.chunk.css.map",
+    "static/js/2.057423ed.chunk.js.LICENSE": "/react-project-ecommerce/static/js/2.057423ed.chunk.js.LICENSE",
     "static/media/crown.ed28accb.svg": "/react-project-ecommerce/static/media/crown.ed28accb.svg",
     "static/media/shopping-bag.cfc8c76a.svg": "/react-project-ecommerce/static/media/shopping-bag.cfc8c76a.svg"
   },
   "entrypoints": [
     "static/js/runtime-main.c27f782e.js",
-    "static/js/2.b8908b91.chunk.js",
-    "static/css/main.5b7c1a8c.chunk.css",
-    "static/js/main.662d7490.chunk.js"
+    "static/js/2.057423ed.chunk.js",
+    "static/css/main.bcf99306.chunk.css",
+    "static/js/main.9a184dde.chunk.js"
   ]
 }
