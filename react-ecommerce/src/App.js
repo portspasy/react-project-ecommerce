@@ -51,16 +51,25 @@ class App extends Component {
         <Switch>
           <Route exact path="/" component={HomePage} />
           <Route path="/shop" component={ShopPage} />
-          <Route exact path="/signin" render={() => this.props.currentUser ? (<Redirect to="/" />) : (<SignInSignUpPage />)} />
+          <Route
+            exact
+            path="/signin"
+            render={() =>
+              this.props.currentUser ? (
+                <Redirect to="/" />
+              ) : (
+                <SignInSignUpPage />
+              )
+            }
+          />
         </Switch>
       </div>
     );
   }
 }
 
-
-const mapStateToProps = ({user}) => ({
-    currentUser: user.currentUser
+const mapStateToProps = ({ user }) => ({
+  currentUser: user.currentUser
 });
 
 const mapDispatchToProps = dispatch => ({

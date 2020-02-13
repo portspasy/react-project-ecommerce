@@ -8,7 +8,6 @@ import CartIcon from "../cart-icon/cart-icon.component";
 // ReactComponent as Logo to import SVG
 import { ReactComponent as Logo } from "../../assets/crown.svg";
 
-
 import "./header.style.scss";
 
 const Header = ({ currentUser }) => (
