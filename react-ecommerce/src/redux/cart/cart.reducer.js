@@ -1,7 +1,8 @@
 import { CartActionTypes } from "./cart.types";
 
 const INITIAL_STATE = {
-  hidden: true
+  hidden: true,
+  cartItems: []
 };
 
 // if the state is undefine, this means will take by defult the INITIAL_STATE value.
@@ -11,6 +12,12 @@ const cartReducer = (state = INITIAL_STATE, action) => {
       return {
         ...state,
         hidden: !state.hidden
+      };
+    case CartActionTypes.ADD_ITEM:
+      return {
+        ...state,
+        // new array with existing cart items and appending the new item that we get as payload!
+        cartItems: [...state.cartItems, action.payload]
       };
     default:
       return state;
