@@ -12,9 +12,10 @@
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    transition: all 0.2s ease-in-out;
   }
 
-  .custom-buttom {
+  .custom-button {
     width: 80%;
     opacity: 0.7;
     position: absolute;
@@ -24,9 +25,9 @@
 
   &:hover {
     .image {
-      opacity: 0.7;
+      opacity: 0.8;
     }
-    .custom-buttom {
+    .custom-button {
       opacity: 0.85;
       display: flex;
     }
