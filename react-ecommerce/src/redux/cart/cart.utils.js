@@ -16,5 +16,5 @@ export const addItemToCart = (cartItems, cartItemToAdd) => {
   }
 
   // if it is the one and only cart
-  return [...cartItems, { ...cartItems, quantity: 1 }];
+  return [...cartItems, { ...cartItemToAdd, quantity: 1 }];
 };
