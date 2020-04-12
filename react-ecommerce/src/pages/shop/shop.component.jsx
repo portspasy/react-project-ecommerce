@@ -2,7 +2,7 @@ import React from "react";
 import { Route } from "react-router-dom";
 
 import CollectionsOverview from "../../components/collections-overview/collections-overview.component";
-import CollecetionPage from "../collcetion/collection.component";
+import CollecetionPage from "../collection/collection.component";
 
 import "./shop.style.scss";
 
