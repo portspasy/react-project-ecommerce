@@ -13,7 +13,7 @@ const config = {
   storageBucket: "react-ecommerce-db-3taodb3.appspot.com",
   messagingSenderId: "141359905145",
   appId: "1:141359905145:web:3187eddef6706aea7397a8",
-  measurementId: "G-EHH1L9BZD1"
+  measurementId: "G-EHH1L9BZD1",
 };
 
 export const createUserProfileDocument = async (userAuth, aditionalData) => {
@@ -23,8 +23,15 @@ export const createUserProfileDocument = async (userAuth, aditionalData) => {
   // storing userAuth uid
   const userRef = firestore.doc(`users/${userAuth.uid}`);
 
+  const collectionRef = firestore.collection("users");
+
   // give us an "exists" property wich is boolian!
   const snapShot = await userRef.get();
+
+  const collectionSnapshot = await collectionRef.get();
+  console.log("==============CollectionSnapshot=================");
+  console.log({ collection: collectionSnapshot.docs.map((doc) => doc.data()) });
+  console.log("=================================================");
 
   console.log(snapShot);
 
@@ -39,7 +46,7 @@ export const createUserProfileDocument = async (userAuth, aditionalData) => {
         displayName,
         email,
         createdAt,
-        ...aditionalData
+        ...aditionalData,
       });
     } catch (error) {
       console.log("error creating user", error.message);
@@ -50,6 +57,24 @@ export const createUserProfileDocument = async (userAuth, aditionalData) => {
 
 // to initialize the firebase
 firebase.initializeApp(config);
+
+export const addCollectionAndDocuments = async (
+  collectionKey,
+  objectsToAdd
+) => {
+  const collectionRef = firestore.collection(collectionKey);
+
+  console.log(collectionRef);
+
+  //batch or group all our calls together
+  const batch = firestore.batch();
+  objectsToAdd.forEach((obj) => {
+    const newDocRef = collectionRef.doc();
+    batch.set(newDocRef, obj);
+  });
+
+  return await batch.commit();
+};
 
 export const auth = firebase.auth();
 export const firestore = firebase.firestore();
